@@ -301,7 +301,7 @@ def install_and_import(package):
 
 
 def uninstall_te_wheel_packages():
-    subprocess.check_call(
+    subprocess.call(
         [
             sys.executable,
             "-m",
@@ -313,4 +313,5 @@ def uninstall_te_wheel_packages():
             "transformer_engine_jax",
         ],
         stderr=subprocess.DEVNULL,
+        stdout=subprocess.DEVNULL,
     )
