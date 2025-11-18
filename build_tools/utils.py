@@ -311,5 +311,6 @@ def uninstall_te_wheel_packages():
             "transformer_engine_cu12",
             "transformer_engine_torch",
             "transformer_engine_jax",
-        ]
+        ],
+        stderr=subprocess.DEVNULL,
     )
